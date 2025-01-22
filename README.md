@@ -2,7 +2,7 @@
 # An interactive and user-friendly E-Learning Platform designed to deliver educational content online. This project offers essential features commonly found in modern e-learning systems, making it a complete solution for online education.
 
 
-# Features :-
+# * Features :-
 # 1. Signing Up Online
 Users can easily register and create accounts using a simple and secure signup form.
 
@@ -25,7 +25,7 @@ A real-time messaging system facilitates communication between learners and inst
 Provides administrative tools for managing courses, students, and analytics to track performance and engagement.
 
 
-# Future Enhancements
+# * Future Enhancements :-
 - User Authentication: Add a robust backend for secure login/signup functionality.
 - Database Integration: Store user data, progress, and assessments using a database like MongoDB or Firebase.
 - Enhanced Analytics: Visualize student performance with charts and reports.
