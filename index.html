@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- link Style.css file-->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <div class="logo">E-Learning Platform</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#courses">Courses</a>
+                <a href="#assessment">Assessment</a>
+                <a href="#login" id="loginBtn">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Login Form -->
+        <div class="form-container" id="loginForm" style="display: none;">
+            <h2>Login</h2>
+            <form id="login">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p>Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
+            </form>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="form-container" id="signupForm" style="display: none;">
+            <h2>Sign Up</h2>
+            <form id="signup">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+            </form>
+        </div>
+
+        <!-- Admin Dashboard -->
+        <div class="dashboard" id="adminDashboard" style="display: none;">
+            <div class="dashboard-card">
+                <h3>Total Students</h3>
+                <p>1,234</p>
+            </div>
+            <div class="dashboard-card">
+                <h3>Active Courses</h3>
+                <p>15</p>
+            </div>
+            <div class="dashboard-card">
+                <h3>Assessments</h3>
+                <p>45</p>
+            </div>
+            <div class="dashboard-card">
+                <h3>Average Score</h3>
+                <p>85%</p>
+            </div>
+        </div>
+
+        <!-- Document Upload -->
+        <div class="form-container" id="uploadSection" style="display: none;">
+            <h2>Upload Documents</h2>
+            <div class="upload-area" id="dropZone">
+                <i class="fas fa-cloud-upload-alt fa-3x"></i>
+                <p>Drag and drop files here or click to select files</p>
+                <input type="file" id="fileInput" style="display: none;" multiple>
+            </div>
+            <div id="uploadedFiles"></div>
+        </div>
+
+        <!-- Assessment Section -->
+        <div class="assessment" id="assessmentSection" style="display: none;">
+            <h2>Online Assessment</h2>
+            <div class="question">
+                <p>1. What is the primary benefit of e-learning?</p>
+                <div class="form-group">
+                    <input type="radio" name="q1" value="a"> Flexibility
+                    <input type="radio" name="q1" value="b"> Cost-effectiveness
+                    <input type="radio" name="q1" value="c"> Interactive learning
+                    <input type="radio" name="q1" value="d"> All of the above
+                </div>
+            </div>
+            <button class="btn" onclick="submitAssessment()">Submit Assessment</button>
+        </div>
+    </div>
+    
+
+    <!-- Link Script.js file -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
