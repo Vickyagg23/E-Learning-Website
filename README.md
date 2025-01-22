@@ -30,6 +30,11 @@ Provides administrative tools for managing courses, students, and analytics to t
 - Database Integration: Store user data, progress, and assessments using a database like MongoDB or Firebase.
 - Enhanced Analytics: Visualize student performance with charts and reports.
 
+# * Technology Stack
+- Frontend: HTML, CSS, JavaScript
+- Styling Frameworks: Bootstrap (optional for styling)
+- Backend: Node.js (optional for advanced functionality like file uploads or real-time communication)
+
 
 
 
